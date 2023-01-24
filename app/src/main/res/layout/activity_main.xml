@@ -52,7 +52,14 @@
             android:layout_width="match_parent"
             android:background="#FF3D00"
             android:layout_weight="1"
-            android:layout_height="0dp"/>
+            android:layout_height="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rc_view_trending_list_3"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
