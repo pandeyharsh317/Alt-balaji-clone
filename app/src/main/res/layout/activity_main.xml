@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#C6FF00"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:weightSum="3"
+        android:layout_width="match_parent">
+
+       <!--   Start of Trending Recycler view -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#00E5FF"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rc_view_trending_list"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <!--   End of Trending Recycler view -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FFC400"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rc_view_trending_list_2"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FF3D00"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_trending_list"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"/>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/facebook_shimmer_layout"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_simmer_imageview"
+        android:layout_marginLeft="5dp"
+        android:background="#DDDDDD"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.cardview.widget.CardView>
